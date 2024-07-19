@@ -1,0 +1,105 @@
+Title: About me
+
+----
+
+Description: Currently, I'm in the middle of it, working on projects that are solely based on product design as well as those involving the creative development of tools and websites.
+
+----
+
+Introimage: - file://ERWXBLDT94ucHceZ
+
+----
+
+Introimagealt: A picture of me in front of the sea in Japan during a sunset
+
+----
+
+Introsubtitle: September 15 2023
+
+----
+
+Letter:
+
+Hey,
+This is a brief letter about me. 
+At the age of 12, I found my grandfather's old camera, charged it, and started experimenting. The art of creating something new from a fresh perspective fascinated me deeply. From that time on, I began making little films with my friends, and I loved it. When I finally saved enough money for my own €300 PC, I entered the digital world and started designing websites for myself and my friends.
+
+Now, 7 years later, I have gained much more experience and have had the opportunity to work with great people and create new, exciting things. Initially, I delved deeper into development and explored everything around it. Then, I started to focus more on product design to craft mindful experiences. Currently, I'm in the middle of it, working on projects that are solely based on product design as well as those involving the creative development of tools and websites.
+Besides that, I'm now starting a degree in Sustainable Business Administration at Stockholm University, so a big move is coming up. You can follow what I'm up to on my (link: page://XToGFFTf1KAb5PM7 text: Now) page.
+I hope you've enjoyed my story so far, and I'm eager to see what comes next.
+ 
+ 
+Your’s Truly,
+
+----
+
+Letterimage: - file://mxLrJgIdnOS2XtiD
+
+----
+
+Letterimagealt: A picture of me filming with my first camera
+
+----
+
+Lettersubtitle: Little me, 10 November 2012
+
+----
+
+Metadescription: Currently, I'm in the middle of it, working on projects that are solely based on product design as well as those involving the creative development of tools and websites.
+
+----
+
+Startsubtitle: September 15 2023
+
+----
+
+Chapters:
+
+- 
+  chapter_title: Starting early
+  chapter_content: |
+    [{"content":{"text":"<p>I've used a simple yet powerful tech stack, which provides ease of use when updating my site while still allowing me the freedom to customize as needed. I've used a simple yet powerful tech stack, which provides ease of use when updating my site while still allowing me the freedom to customize as needed. I've used a simple yet powerful tech stack, which provides ease of use when updating my site while still allowing me the freedom to customize as needed. I've used a simple yet powerful tech stack, which provides ease of use when updating my site while still allowing me the freedom to customize as needed.I've used a simple yet powerful tech stack, which provides ease of use when updating my site while still allowing me the freedom to customize as needed. I've used a simple yet powerful tech stack, which provides ease of use when updating my site while still allowing me the freedom to customize as needed.I've used a simple yet powerful tech stack, which provides ease of use when updating my site while still allowing me the freedom to customize as needed. I've used a simple yet powerful tech stack, which provides ease of use when updating my site while still allowing me the freedom to customize as needed.I've used a simple yet powerful tech stack, which provides ease of use when updating my site while still allowing me the freedom to customize as needed. I've used a simple yet powerful tech stack, which provides ease of use when updating my site while still allowing me the freedom to customize as needed.I've used a simple yet powerful tech stack, which provides ease of use when updating my site while still allowing me the freedom to customize as needed. I've used a simple yet powerful tech stack, which provides ease of use when updating my site while still allowing me the freedom to customize as needed.I've used a simple yet powerful tech stack, which provides ease of use when updating my site while still allowing me the freedom to customize as needed. I've used a simple yet powerful tech stack, which provides ease of use when updating my site while still allowing me the freedom to customize as needed.I've used a simple yet powerful tech stack, which provides ease of use when updating my site while still allowing me the freedom to customize as needed. I've used a simple yet powerful tech stack, which provides ease of use when updating my site while still allowing me the freedom to customize as needed.I've used a simple yet powerful tech stack, which provides ease of use when updating my site while still allowing me the freedom to customize as needed. I've used a simple yet powerful tech stack, which provides ease of use when updating my site while still allowing me the freedom to customize as needed.I've used a simple yet powerful tech stack, which provides ease of use when updating my site while still allowing me the freedom to customize as needed. I've used a simple yet powerful tech stack, which provides ease of use when updating my site while still allowing me the freedom to customize as needed.I've used a simple yet powerful tech stack, which provides ease of use when updating my site while still allowing me the freedom to customize as needed. I've used a simple yet powerful tech stack, which provides ease of use when updating my site while still allowing me the freedom to customize as needed.I've used a simple yet powerful tech stack, which provides ease of use when updating my site while still allowing me the freedom to customize as needed. I've used a simple yet powerful tech stack, which provides ease of use when updating my site while still allowing me the freedom to customize as needed.I've used a simple yet powerful tech stack, which provides ease of use when updating my site while still allowing me the freedom to customize as needed. I've used a simple yet powerful tech stack, which provides ease of use when updating my site while still allowing me the freedom to customize as needed.</p><p></p>"},"id":"9e971f6f-d5bc-4fb9-bdeb-dc5b95a4f549","isHidden":false,"type":"text"},{"content":{"location":"kirby","image":["file://JzpoCeL7mXngPvBq"],"src":"","alt":"tetsy","caption":"Test","link":"","ratio":"","crop":"false"},"id":"f5c796cb-af6b-4fe0-b066-b64e5dcfac95","isHidden":false,"type":"image"}]
+  chapter_date: November 2010
+
+----
+
+Intro:
+
+**Starting early**
+I've used a simple yet powerful tech stack, which provides ease of use when updating my site while still allowing me the freedom to customize as needed.
+I've used a simple yet powerful tech stack, which provides ease of use when updating my site while still allowing me the freedom to customize as needed.
+
+----
+
+Uuid: GppSy7NEUnw0IwYw
+
+----
+
+Startimage:
+
+- 
+  id: about-intro.jpg
+  image:
+    back: pattern
+    color: orange-500
+    cover: false
+    icon: image
+    url: >
+      http://localhost:8000/media/pages/about/e856c21834-1718869427/about-intro.jpg
+    src: >
+      data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw
+    srcset: >
+      http://localhost:8000/media/pages/about/e856c21834-1718869427/about-intro-38x.jpg
+      38w,
+      http://localhost:8000/media/pages/about/e856c21834-1718869427/about-intro-76x.jpg
+      76w
+  info: ""
+  link: /pages/about/files/about-intro.jpg
+  sortable: true
+  text: about-intro.jpg
+  uuid: file://ERWXBLDT94ucHceZ
+  dragText: '(image: about-intro.jpg)'
+  filename: about-intro.jpg
+  type: image
+  url: >
+    http://localhost:8000/media/pages/about/e856c21834-1718869427/about-intro.jpg

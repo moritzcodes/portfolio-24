@@ -1,0 +1,105 @@
+# Kirby .htaccess
+# revision 2023-07-22
+
+# rewrite rules
+<IfModule mod_rewrite.c>
+
+# enable awesome urls. i.e.:
+# http://yourdomain.com/about-us/team
+RewriteEngine on
+
+# make sure to set the RewriteBase correctly
+# if you are running the site in a subfolder;
+# otherwise links or the entire site will break.
+#
+# If your homepage is http://yourdomain.com/mysite,
+# set the RewriteBase to:
+#
+# RewriteBase /mysite
+
+# In some environments it's necessary to
+# set the RewriteBase to:
+#
+# RewriteBase /
+
+# block files and folders beginning with a dot, such as .git
+# except for the .well-known folder, which is used for Let's Encrypt and security.txt
+RewriteRule (^|/)\.(?!well-known\/) index.php [L]
+
+# block all files in the content folder from being accessed directly
+RewriteRule ^content/(.*) index.php [L]
+
+# block all files in the site folder from being accessed directly
+RewriteRule ^site/(.*) index.php [L]
+
+# block direct access to Kirby and the Panel sources
+RewriteRule ^kirby/(.*) index.php [L]
+
+# make site links work
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*) index.php [L]
+
+# redirect www to non-www
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+</IfModule>
+
+# pass the Authorization header to PHP
+SetEnvIf Authorization "(.+)" HTTP_AUTHORIZATION=$1
+
+# compress text file responses
+<IfModule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/plain
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE text/javascript
+AddOutputFilterByType DEFLATE application/json
+AddOutputFilterByType DEFLATE application/javascript
+AddOutputFilterByType DEFLATE application/x-javascript
+</IfModule>
+
+# set security headers in all responses
+<IfModule mod_headers.c>
+
+# serve files as plain text if the actual content type is not known
+# (hardens against attacks from malicious file uploads)
+Header set Content-Type "text/plain" "expr=-z %{CONTENT_TYPE}"
+Header set X-Content-Type-Options "nosniff"
+
+</IfModule>
+
+# Cache
+<IfModule mod_expires.c>
+   ExpiresActive On
+
+   # Images
+   ExpiresByType image/jpeg "access plus 1 year"
+   ExpiresByType image/gif "access plus 1 year"
+   ExpiresByType image/png "access plus 1 year"
+   ExpiresByType image/webp "access plus 1 year"
+   ExpiresByType image/svg+xml "access plus 1 year"
+   ExpiresByType image/x-icon "access plus 1 year"
+
+   # Video
+   ExpiresByType video/mp4 "access plus 1 year"
+   ExpiresByType video/mpeg "access plus 1 year"
+
+   # CSS, JavaScript
+   ExpiresByType text/css "access plus 1 month"
+   ExpiresByType text/javascript "access plus 1 month"
+   ExpiresByType application/javascript "access plus 1 month"
+
+   # Others
+   ExpiresByType application/pdf "access plus 1 month"
+   ExpiresByType font/woff2 "access plus 1 year"
+   ExpiresByType application/font-woff2 "access plus 1 year"
+   ExpiresByType application/x-font-woff2  "access plus 1 year"
+   ExpiresByType font/otf "access plus 1 year"
+   ExpiresByType application/font-otf "access plus 1 year"
+   ExpiresByType application/x-font-otf  "access plus 1 year"
+   ExpiresByType font/ttf "access plus 1 year"
+   ExpiresByType application/font-ttf "access plus 1 year"
+   ExpiresByType application/x-font-ttf  "access plus 1 year"
+</IfModule>

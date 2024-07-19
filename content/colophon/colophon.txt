@@ -1,0 +1,17 @@
+Title: Colophon
+
+----
+
+Description: Explore how this site is built and learn something for yourself by reading this colophon.
+
+----
+
+Subtitle: How it's built.
+
+----
+
+Blocks: [{"content":{"level":"h3","text":"Open-Source"},"id":"caf69ba6-0042-4386-bf29-e61977d91848","isHidden":false,"type":"heading"},{"content":{"text":"<p>Just so you can get a view in how I build it and maybe you find something relatable, funny or something I can optimize. Here you can find it on GitHub.</p>"},"id":"b9e529f5-fe19-4198-8d60-0285e5f0d458","isHidden":false,"type":"text"},{"content":{"level":"h3","text":"Tracking"},"id":"4b003502-45ee-4219-93da-9f1bbb4c5aa1","isHidden":false,"type":"heading"},{"content":{"text":"<p>I get the idea why big corporations pack their websites full of scripts tracking every little interaction the user does twice. For me this doesn’t really matter, I don’t need to optimize certain KPIs for this page, so enjoy.</p>"},"id":"0db4ef38-951b-48da-9aea-0d0364d8b4fb","isHidden":false,"type":"text"},{"content":{"level":"h3","text":"Typography"},"id":"a84ccf7f-097d-4894-bf2e-c0b67f85680a","isHidden":false,"type":"heading"},{"content":{"text":"<p>Just so you can get a view in how I build it and maybe you find something relatable, funny or something I can optimize. Here you can find it on GitHub.</p>"},"id":"c9fc80f4-8685-4c3e-9943-14d3aec6a4ca","isHidden":false,"type":"text"},{"content":{"level":"h3","text":"Tech Stack"},"id":"cb6832c3-3762-4d0b-91c9-718bdb7c2b0b","isHidden":false,"type":"heading"},{"content":{"text":"<p>Just so you can get a view in how I build it and maybe you find something relatable, funny or something I can optimize. Here you can find it on GitHub.</p>"},"id":"7a7ba49b-6fae-410b-a818-fa1a0fb2c031","isHidden":false,"type":"text"},{"content":{"tableitem":[{"category":"Language","value":"PHP"},{"category":"CMS","value":"Kirby"},{"category":"Styling","value":"Plain CSS"}]},"id":"61202af0-6960-4ac1-9a61-4564781f218c","isHidden":false,"type":"listing"},{"content":{"level":"h3","text":"Hosting"},"id":"139c0031-7fe9-436e-9523-39219cec347d","isHidden":false,"type":"heading"},{"content":{"text":"<p>Hosted on Vercel</p>"},"id":"23e9d55f-7f79-4fa2-909f-0a68fff6abb6","isHidden":false,"type":"text"},{"content":{"level":"h3","text":"Photography"},"id":"61f4e75c-cd2b-428b-973b-c0fa5ca3a34b","isHidden":false,"type":"heading"},{"content":{"text":"<p>All images are taken by if not stated otherwise. </p>"},"id":"7c5e1d73-9603-4684-8dac-20252277fc40","isHidden":false,"type":"text"},{"content":{"tableitem":[{"category":"Main Camera","value":"Fujifilm XT-2"},{"category":"Phone","value":"iPhone 13 Pro"}]},"id":"e2a5ea9f-79aa-4607-9a16-fc0127652f2f","isHidden":false,"type":"listing"},{"content":{"level":"h3","text":"Inspiration"},"id":"8e5e84bf-2367-40d6-915b-cea5cda86de5","isHidden":false,"type":"heading"},{"content":{"text":"<ul><li><a href=\"https://casper-lourens.com/\" target=\"_blank\">Casper Lourens</a></li><li><a href=\"https://linusrogge.com/\" target=\"_blank\">Linus Rogge</a></li><li><a href=\"https://antonstallboerger.com/\" target=\"_blank\">Anton Stallbörger</a></li><li><a href=\"https://carlbeaverson.com/\" target=\"_blank\">Carl Beaverson</a></li><li><a href=\"https://slrncl.com/\" target=\"_blank\">Nicolas Solerieu</a></li><li><a href=\"https://chester.how/\" target=\"_blank\">Chester How</a></li><li><a href=\"https://emilkowal.ski/\" target=\"_blank\">Emil Kowalski</a></li></ul>"},"id":"186c6903-3061-462a-8034-3e5650fc8110","isHidden":false,"type":"list"}]
+
+----
+
+Uuid: LcD6wd0J6vdc7uR9

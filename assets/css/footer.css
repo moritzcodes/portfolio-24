@@ -1,0 +1,20 @@
+footer {
+    max-width: var(--max-width);
+    width: 94vw;
+    margin-top: var(--spacing-lg);
+    color: var(--secondary-color);
+    padding: var(--spacing-md) 0;
+    border-top: var(--border);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+}
+
+
+footer nav ul {
+    display: flex;
+    gap: var(--spacing-sm);
+}
+

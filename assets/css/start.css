@@ -1,0 +1,106 @@
+/* Intro */
+.intro {
+    border-bottom: var(--border);
+    padding-bottom: var(--spacing-lg);
+}
+
+.intro p {
+    display: inline;
+}
+.intro a {
+    position: relative;
+    color: var(--key-color);
+    padding: 4px 6px;
+    transition: color 0.3s ease;
+}
+.intro a:hover {
+    color: var(--key-color);
+}
+.intro a:hover::after {
+    background-color: var(--key-hover-background); 
+}
+.intro a::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-color: var(--key-background); 
+    position: absolute;
+    border-radius: 4px;
+    left: 0;
+    transition: background-color 0.3s ease;
+}
+.tooltip-readcv a {
+    color: var(--primary-color); 
+}
+.tooltip-readcv a:hover {
+    color: var(--primary-color); 
+}
+.tooltip-readcv a::after {
+    background-color: rgba(0, 0, 0, 0.05); 
+}
+.tooltip-readcv a:hover::after {
+    background-color: rgba(0, 0, 0, 0.1); 
+}
+
+.tooltip-twitter a {
+    color: #1da1f2; 
+}
+.tooltip-twitter a:hover {
+    color: #1da1f2; 
+}
+.tooltip-twitter a::after {
+    background-color: rgba(29,161,242,.1); 
+}
+.tooltip-twitter a:hover::after {
+    background-color: rgba(29,161,242,.2); 
+}
+
+/* Projects */
+.projects {
+    padding-top: var(--spacing-xl);
+    margin-bottom: 92px ;
+}
+.projects-item {
+    margin-bottom: var(--spacing-lg);
+}
+.projects-image {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: var(--spacing-md);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--spacing-lg) 0;
+    box-shadow: var(--border-project), var(--box-shadow);
+}
+.projects-image img {
+    width: 70%;
+    height: auto;
+    border: none;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    box-shadow: 0px 5px 8px 0px rgba(11, 11, 11, 0.08), 0px 8px 15px 0px rgba(0, 0, 0, 0.05);
+}
+
+.projects-image:hover img {
+    transform: translateY(-6px);
+    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.10), 0px 16px 15px 0px rgba(0, 0, 0, 0.08);
+}
+.projects-item h2 span {
+    color: var(--secondary-color);
+    transition: color 0.3s ease;
+}
+/*
+.projects__item:hover h2 span {
+    color: var(--primary-color);
+}
+*/
+
+.projects-item h2 {
+    margin-bottom: var(--spacing-sm);
+    color: var(--primary-color);
+    margin-top: var(--spacing-md);
+}
+.projects-item p {
+    color: var(--secondary-color);
+}

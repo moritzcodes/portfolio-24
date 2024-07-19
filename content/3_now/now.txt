@@ -1,0 +1,83 @@
+Title: Now
+
+----
+
+Description: A constantly updated list of things that happen in my life or thoughts I come up with. Check it out and scroll for a bit.
+
+----
+
+Subtitle: That's happening in my life right now
+
+----
+
+Posts:
+
+- 
+  post_title: Updates to my portfolio
+  category: side-project
+  layout: |
+    [{"attrs":[],"columns":[{"blocks":[{"content":{"text":"<p>I've collected feedback from friends and made the following updates to the design:<br>• Tinted backgrounds for the project pages<br>• More accessible secondary colors and text sizes<br>• Underlined inline links</p><p><br>Another thing I added is a new page called \"Learning Log,\" where I document small things I've learned over time. It's primarily for my own reference and motivation to continue learning, but you're welcome to check it out as well.</p><p><a href=\"/@/page/IsgdOoOH8nB93tFM\">My Learning Log</a></p><p></p>"},"id":"53a05474-5039-4222-8f07-00c600ad8b4a","isHidden":false,"type":"text"}],"id":"4ba32399-f784-4ec8-82dc-60c56cc78415","width":"1/1"}],"id":"4887da3d-6b02-4505-a5b9-57a2c2b860cc"}]
+  post_date: 2024-07-19
+- 
+  post_title: Laying foundations for something special
+  category: work
+  layout: |
+    [{"attrs":[],"columns":[{"blocks":[{"content":{"text":"<p>Creating something new from scratch is a special yet challenging endeavor. Stay tuned for what's to come - I'll likely have more to share in September.</p>"},"id":"cab6a555-c331-40a3-b444-e78eea636bb9","isHidden":false,"type":"text"}],"id":"ab3b1377-56be-4ee0-b9f5-ad04ebc49031","width":"1/1"}],"id":"a5823fa8-e1f2-4abd-bca9-e8477340f739"}]
+  post_date: 2024-07-09
+- 
+  post_title: Apartment found
+  category: life-update
+  layout: |
+    [{"attrs":[],"columns":[{"blocks":[{"content":{"text":"<p>During my vacation to Stockholm, I visited two apartments that I found online and they looked good. The first one was quite bad, to be honest. It was a basement room with only a small window and around 10 square meters. So I wasn't that optimistic about the second one I visited really spontaneously on the second day. When I arrived, I first thought I was wrong because it looked too good, but the house owner was really nice and showed me everything. We got along pretty well, and I got 44 square meters for myself with a bedroom and a working room for around 340€ per month, which is a pretty rare find in Stockholm. So I'm happy and relieved to move to Stockholm in August. (I found the apartment on <a href=\"https://akademiskkvart.se/\" target=\"_blank\" title=\"akademiskkvart\">akademiskkvart</a>, so if you're a student that's a great place to find good priced apartments.)</p>"},"id":"e7ab6a1f-f585-4369-8302-992ca3a6fcda","isHidden":false,"type":"text"}],"id":"ba1bd4cc-68b6-4f79-9747-ed10c243de92","width":"1/1"}],"id":"78faec16-cc20-46dd-b6de-d3f8d99e1c13"}]
+  post_date: 2024-06-23
+- 
+  post_title: Moving to Stockholm
+  category: life-update
+  layout: |
+    [{"attrs":[],"columns":[{"blocks":[{"content":{"text":"<p>Going big steps right now, I got admitted to Stockholm University to study the program Sustainability, Business &amp; Ethics. So I will move to Stockholm in Mid-August (yayy!). </p><p>If you're from Stockholm or know anyone from Stockholm, <a href=\"mailto:moritz.j.kindler@gmail.com\">hit me up</a>.</p>"},"id":"e28515b5-8aa7-4e31-adf6-df51fc838fa0","isHidden":false,"type":"text"}],"id":"76683032-2c73-41d2-890b-d6859064a301","width":"1/1"}],"id":"a057330c-cfaf-4e9a-b6d7-3a12d2d8ad6d"}]
+  post_date: 2024-06-12
+- 
+  post_title: Simulated capabilities
+  category: thoughts
+  layout: '[{"attrs":[],"columns":[{"blocks":[{"content":{"text":"<p>Human brains often want to minimize work and risk. This is an evolutionary trait that has allowed everyone to survive to this point. However, the world is changing at a rapid pace, and with this old, evolutionary mindset, you may be underestimating yourself.<br><br>– Get out and try new things.</p>"},"id":"7df4d73b-e7d7-4c24-8024-d873a5a809d5","isHidden":false,"type":"text"}],"id":"05a7360c-2859-4e27-8ac5-855c3ef82183","width":"1/1"}],"id":"ef3cc246-077b-4426-a7ab-21e6674f5234"},{"attrs":[],"columns":[{"blocks":[{"content":{"location":"kirby","image":["file://FJfzPIxkIJXq9SpH"],"src":"","alt":"Woman meditating on a sand bank","caption":"Slow down to view new perspectives.","link":"","ratio":"","crop":"false"},"id":"a670c2bf-44cb-4f54-a055-0b9b7f5ca1d5","isHidden":false,"type":"image"}],"id":"5a1b903d-b088-42a4-831a-3bcc0a190ca5","width":"1/2"},{"blocks":[{"content":{"location":"kirby","image":["file://iy2Ow6NGNqDJhlwD"],"src":"","alt":"Woman sitting in front of a digital art installation","caption":"Get inspired by art.","link":"","ratio":"","crop":"false"},"id":"434d6e59-fc06-4e2e-9303-cf9b174e75f3","isHidden":false,"type":"image"}],"id":"2ebde1f6-a69b-4b06-9b47-916638d6b096","width":"1/2"}],"id":"5b6bbf87-6894-46ad-9a0b-33a3b5625cae"}]'
+  post_date: 2024-02-24
+- 
+  post_title: Travelling to Mexico
+  category: life-update
+  layout: '[{"attrs":[],"columns":[{"blocks":[{"content":{"text":"<p>After working for the past few months, I decided to spontaneously book the trip I had long wanted to take – an exploration of Central America. Unfortunately, I initially missed my flight due to a missing ESTA visa (Thank you US). Undeterred, I traveled by bus to Amsterdam, where I spent a night in a hostel to catch a direct, budget flight to Cancun, Mexico.</p>"},"id":"f8c9eab9-db36-44a6-b9f1-9fd9acd93ac3","isHidden":false,"type":"text"}],"id":"1975de4b-f46d-4188-9226-24d10922ed09","width":"1/1"}],"id":"962d133e-900a-44ef-9ac1-66c8528f9b93"},{"attrs":[],"columns":[{"blocks":[{"content":{"location":"kirby","image":["file://rps7gKEGapiBvKZu"],"src":"","alt":"Morning sunrise vibes inside a plane","caption":"Morning vibes aboard the plane.","link":"","ratio":"","crop":"false"},"id":"e7f7bd80-4dda-41ad-bbfc-98a9c2620ca3","isHidden":false,"type":"image"}],"id":"e67565d7-08c7-4488-b623-4a735e530773","width":"1/1"}],"id":"89fde23c-af37-4a12-bca8-7cc17258c396"}]'
+  post_date: 2024-02-01
+- 
+  post_title: >
+    Completing a 10k run in snowy, hilly
+    terrain.
+  category: life-update
+  layout: |
+    [{"attrs":[],"columns":[{"blocks":[{"content":{"text":"<p>It was a spontaneous decision. My friend Nick didn't want to run the 10K alone, so I signed myself up. Without much training in the last few months, I ran a two 6ks, and that was it. The first half of the run was slippery but doable. In the second half, the hills really challenged me, and I felt like giving up. Only because of the crowd and the competition did I push through and finish in under an hour. I’ll definitely remember this hour for the rest of my life and I’m proud that I didn’t give up.<br><br>– Your body is capable of a lot more than you think.</p>"},"id":"55a656f5-76c9-4d94-a19a-52f0a39e0878","isHidden":false,"type":"text"}],"id":"59d5098a-0d7a-417f-a18f-c42c1ddfec52","width":"1/1"}],"id":"8d7e1cba-9cda-4987-b09e-c5bf8700893b"},{"attrs":[],"columns":[{"blocks":[{"content":{"location":"kirby","image":["file://dPK0IW57XZduot3k"],"src":"","alt":"Person running up a hill in a 10k race","caption":"The funny technique was that it became less slippery the faster you ran.","link":"","ratio":"","crop":"false"},"id":"217abd94-c66a-4f12-b464-249baafeab1b","isHidden":false,"type":"image"}],"id":"15146706-2292-44af-89e9-5dc08c41cd1b","width":"1/1"}],"id":"71c83225-e55c-40cd-bfa9-edf20de08a92"}]
+  post_date: 2024-01-07
+- 
+  post_title: Friendship
+  category: thoughts
+  layout: |
+    [{"attrs":[],"columns":[{"blocks":[{"content":{"text":"<p>Because of some personal events I'm currently having a pretty bad time, in that times you notice on which friends you can trust. You will still feel bad, but you have someone that is there for you and listens to you. </p><p>Thank you Linus &lt;3</p>"},"id":"d2549a1c-f064-4b01-b311-313cf54cd62e","isHidden":false,"type":"text"}],"id":"bf6d169e-cdd5-4f62-937d-4fa5609f9847","width":"1/1"}],"id":"8d14f66e-f4e1-4f10-b6e4-ef2a07d5d637"},{"attrs":[],"columns":[{"blocks":[{"content":{"location":"kirby","image":["file://Na31g86urXi1K9YG"],"src":"","alt":"Museum in Berlin showing a ocean of plastic","caption":"Free museum in Germany are excellent.","link":"","ratio":"","crop":"false"},"id":"47ac5f4d-a1a5-44b4-b6f0-20abde4f2ca2","isHidden":false,"type":"image"}],"id":"a081976b-390a-437d-8884-436b44e64fa3","width":"1/2"},{"blocks":[{"content":{"location":"kirby","image":["file://YXQLShnABAQzcfSA"],"src":"","alt":"Rainy street at night in berlin","caption":"Good visualisation of my mood.","link":"","ratio":"","crop":"false"},"id":"f9db24bb-a476-46b7-a311-e6284db3104c","isHidden":false,"type":"image"}],"id":"d4e77901-e7be-4a3e-a9aa-a1993d38392f","width":"1/2"}],"id":"65b188e4-279c-49d0-a5c0-df5a9e95d623"}]
+  post_date: 2023-10-25
+- 
+  post_title: Recap on my Asia Adventures
+  category: life-update
+  layout: '[{"attrs":[],"columns":[{"blocks":[{"content":{"location":"web","url":"https://youtu.be/jyGUVsTllZM","video":[],"poster":[],"caption":"Some of my best shots on my solo travels through Asia","autoplay":"false","muted":"true","loop":"false","controls":"true","preload":"auto"},"id":"d4bcbdb4-ddfd-451c-8d2e-ee2bc84f770c","isHidden":false,"type":"video"}],"id":"aebb2f56-7946-49af-aef3-52665bc487e1","width":"1/1"}],"id":"6c8b38c6-1780-4499-b36d-b92ec6297a3c"}]'
+  post_date: 2023-09-10
+- 
+  post_title: Living in Japan
+  category: thoughts
+  layout: |
+    [{"attrs":[],"columns":[{"blocks":[{"content":{"text":"<p>During my solo travels in Japan, the idea of moving here struck me, like it does for many other people visiting Japan. It's difficult to describe, but the cultural atmosphere of serenity feels incredibly calming. </p><p>I probably won't permanently move here, but I will consider living here for a couple of years.</p>"},"id":"c7b39ea1-be9d-4911-a8f1-a3929398df84","isHidden":false,"type":"text"}],"id":"5f586787-e499-4f01-9def-d8b172fea4e5","width":"1/1"}],"id":"683878a7-ab79-41cf-832b-b82da66e1421"},{"attrs":[],"columns":[{"blocks":[{"content":{"location":"kirby","image":["file://Y1plXCI7USGUrCY8"],"src":"","alt":"Children playing football in Tokyo","caption":"Stunning to see how over 37 million people are living together in one city.","link":"","ratio":"","crop":"false"},"id":"19bc7052-ac8e-4211-af48-7148293153de","isHidden":false,"type":"image"}],"id":"6bce2b1c-0852-422d-95e9-853d239cae9a","width":"1/2"},{"blocks":[{"content":{"location":"kirby","image":["file://Kv9AQkypvf0GW97b"],"src":"","alt":"Businessman waiting for the train","caption":"Public transportation for everyone, regardless of location or time.","link":"","ratio":"","crop":"false"},"id":"f59fc794-1e98-4e27-a3d2-fcfbc2bac5b9","isHidden":false,"type":"image"}],"id":"4a3440fe-1652-45fa-83e5-8fd60d98e88d","width":"1/2"}],"id":"ffa6095a-dd6a-47d6-a606-d869c64351d6"}]
+  post_date: 2023-09-08
+- 
+  post_title: New adventure
+  category: life-update
+  layout: |
+    [{"attrs":[],"columns":[{"blocks":[{"content":{"text":"<p>For the next 5 weeks I'll be travelling solo through Japan, Singapore &amp; Malaysia. </p>"},"id":"da7d776a-2cdd-40aa-8435-50418a4e4cf4","isHidden":false,"type":"text"}],"id":"448f98db-5697-4e9b-864e-5a400cda39ec","width":"1/1"}],"id":"495b8137-e200-478f-92a3-034bc9554a0e"}]
+  post_date: 2023-08-28
+
+----
+
+Uuid: XToGFFTf1KAb5PM7

@@ -1,0 +1,71 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    width: 94vw;
+    max-width: var(--max-width);
+    margin: 0 auto; 
+
+}
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo .logo-image {
+    height: 38px;
+    width: 32px;
+    margin-right: 8px;   
+    background-image: url(../images/portrait-light.png);
+    background-size:contain; 
+    background-repeat: no-repeat;
+}
+@media (prefers-color-scheme: dark) {
+    .logo .logo-image {
+        background-image: url(../images/portrait-dark.png);
+    }
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-info h1 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    color: var(--primary-color);
+}
+
+.profile-info h2 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;    
+    color: var(--secondary-color);
+    margin: 0;
+}
+
+.nav-links {
+    display: flex;
+    gap: 24px;
+}
+.nav-links li {
+    list-style: none;
+}
+.nav-links a {
+    text-decoration: none;
+    font-size: 16px;
+    color: var(--primary-color);
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+.nav-links a.active {
+    color: var(--secondary-color);
+}
+.nav-links a:hover {
+    color: var(--secondary-color);
+}
+

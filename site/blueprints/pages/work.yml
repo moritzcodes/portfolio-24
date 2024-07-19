@@ -1,0 +1,14 @@
+title: Work
+
+icon: 🖼
+
+sections:
+  drafts:
+    extends: sections/projects
+    label: Drafts
+    status: draft
+
+  listed:
+    extends: sections/projects
+    label: Published Albums
+    status: listed

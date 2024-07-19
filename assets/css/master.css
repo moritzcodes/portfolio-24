@@ -1,0 +1,182 @@
+@import url('reset.css');
+@import url('components.css');
+@import url('nav.css'); 
+@import url('start.css'); 
+@import url('about.css'); 
+@import url('now.css'); 
+@import url('project.css'); 
+@import url('footer.css'); 
+@import url('today.css'); 
+@import url('mobile.css'); 
+
+
+/* Variables */
+:root {
+    --max-width: 630px;
+    --font-family: 'Matter', sans-serif;
+    --primary-color: #000;
+    --secondary-color: #616161;
+    --bg-color: #fff;
+    --key-color: #315c42;
+    --key-background: rgba(92, 167, 122, 0.1);
+    --key-hover-background: rgba(92, 167, 122, 0.2);
+    --border-color: rgba(0, 0, 0, 0.1);
+    --border-hover-color: rgba(0, 0, 0, 0.2);
+    --border-radius: 8px;
+    --border: 1px solid var(--border-color);
+    --border-image: 1px solid var(--border-color);
+    --border-project: inset 0px 0px 0px 1px var(--border-color);
+    --spacing-xl: 82px;
+    --spacing-lg: 52px;
+    --spacing-md: 24px;
+    --spacing-sm: 14px;
+    --spacing-xs: 6px;
+    --box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.02), 0px 2px 4px 0px rgba(0, 0, 0, 0.04);
+    --tooltip-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.03), 0px 2px 8px 0px rgba(0, 0, 0, 0.04), 0px 0px 0px 1px #F0F0F0;
+    --retro-background: url(../images/about/bg-card.jpg);
+    --fade-out: linear-gradient(to top, white, transparent);
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --primary-color: #EBEBEB;
+        --secondary-color: #b6b6b6;
+        --bg-color: #000000;
+        --border-color: #333333;
+        --border-hover-color: #4e4e4e;
+        --tooltip-shadow: 4px 4px 12px 0px rgba(255, 255, 255, 0.03), 0px 2px 8px 0px rgba(255, 255, 255, 0.04), 0px 0px 0px 1px #171717;
+        --key-background: rgba(255, 255, 255, 0.15);
+        --key-hover-background: rgba(236, 255, 244, 0.3);
+        --key-color: #ffffff;
+        --retro-background: url(../images/about/bg-card-dark.jpg);
+        --fade-out: linear-gradient(to top, black, transparent);
+    }
+
+    body {
+        background-color: var(--bg-color);
+        color: var(--primary-color);
+    }
+
+    a {
+        color: var(--secondary-color);
+    }
+
+    a:hover {
+        color: var(--primary-color);
+    }
+
+    .tooltip-readcv a::after {
+        background-color: rgba(255, 255, 255, 0.15);
+    }
+    .tooltip-readcv a:hover::after {
+        background-color: rgba(236, 255, 244, 0.3);
+    }
+    
+    .tooltip-twitter a::after {
+        background-color: rgba(29,161,242,.15); 
+    }
+
+    .tooltip-twitter a:hover::after {
+        background-color: rgba(29,161,242,.25); 
+    }
+
+    .background-project {
+        opacity: .1;
+    }
+}
+
+/* General */
+body {
+    font-family: var(--font-family), 'SF Pro', 'Inter', 'Arial', sans-serif;
+    color: var(--primary-color);
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 0px;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    ::selection {
+        background-color: var(--key-background); 
+        color: var(--key-color);
+    }
+}
+h2 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.4
+}
+p {
+    line-height: 1.6;
+}
+a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    position: relative;
+}
+a.link::after, .layout-section a::after, .about-letter a::after {
+    content: ' ';
+    width: 100%;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    height: 1px;
+    background-color: var(--border-color);
+    transition: background-color 200ms ease;
+}
+a:hover {
+    color: var(--primary-color);
+}
+a.link:hover::after, .layout-section a:hover::after, .about-letter a:hover::after  {
+    background-color: var(--border-hover-color);
+}
+main {
+    max-width: var(--max-width);
+    width: 94vw;
+    margin: var(--spacing-xl) auto;
+}
+
+
+img {
+    width: 100%;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    border: var(--border-image);
+  }
+
+figcaption {
+    font-size: 12px;
+    line-height: 1.4;
+    color: var(--secondary-color);
+    margin-top: var(--spacing-xs);
+    margin-left: var(--spacing-xs);
+}
+sub {
+    font-size: 50%;
+    margin-left: .5px;
+}
+
+p.sub-text {
+    color: var(--secondary-color);
+}
+
+strong {
+    font-weight: 600;
+}
+
+em {
+    color: var(--secondary-color);
+}
+
+iframe {
+    max-width: var(--max-width);
+    width: 94vw;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.link-wrapper {
+    display: flex;
+    justify-content: center;
+}

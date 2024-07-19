@@ -1,0 +1,22 @@
+
+columns:
+  - width: 1/2
+    sections:
+      pages:
+        type: pages
+        templates:
+          - start
+          - default
+          - error
+          - about 
+          - now
+          - colophon
+          - today
+
+  - width: 1/2
+    sections:
+      projects: sections/projects
+
+
+
+       

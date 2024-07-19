@@ -1,0 +1,7 @@
+type: pages
+label: Project
+parent: kirby.page("work")
+size: small
+template: project
+empty: No projects yet
+

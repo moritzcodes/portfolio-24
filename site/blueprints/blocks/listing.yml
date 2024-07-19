@@ -1,0 +1,14 @@
+name: Listing
+icon: bolt
+tabs:
+  content:
+    fields:
+      tableitem:
+        type: structure
+        fields:
+          category:
+            label: Category
+            type: text
+          value:
+            label: Value
+            type: text

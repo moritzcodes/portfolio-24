@@ -1,0 +1,75 @@
+.about-content {
+    margin-top: var(--spacing-lg);
+    padding-bottom: 250px;
+}
+.about-short-grid {
+    margin-top: var(--spacing-md);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-lg);
+    align-items: center;
+}
+
+.about-item ul li {
+    padding: var(--spacing-xs) 0;
+    list-style: disc;
+}
+
+.about-item ul li::marker {
+    color: var(--secondary-color);
+}
+.about-item ul li ul {
+    margin-top: var(--spacing-xs);
+}
+.about-item ul li ul li {
+    margin: 0 var(--spacing-sm);
+    padding: var(--spacing-xs) 0;
+    list-style: circle;
+}
+
+
+
+.about-letter {
+    margin-top: var(--spacing-xl);
+    padding: var(--spacing-md);
+    border-radius: 24px;
+    transform: rotateZ(-1deg);
+    background-image: var(--retro-background);
+    background-size: contain;
+    background-position: center;
+    border: 1px solid var(--border-color);
+    position: relative;
+}
+.about-letter-wrapper {
+    position: relative;
+}
+.about-letter-wrapper::after {
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 24px;
+    transform: rotateZ(-1deg);
+    background-image: var(--retro-background);
+    background-size: 20% auto;
+    border: 1px solid var(--border-color);
+    top: var(--spacing-sm);
+    left: var(--spacing-sm);
+    z-index: -1;
+    opacity: .6;
+}
+.about-letter p:not(:first-child){
+    margin-top: var(--spacing-md);
+}
+.about-letter p.signature {
+    font-family: 'Nanum Pen';
+    color: var(--secondary-color);
+    font-size: 32px;
+    margin-top: 0;
+}
+
+.about-letter .img-card {
+    position: absolute;
+    bottom: -290px;
+    right: -40px;
+}

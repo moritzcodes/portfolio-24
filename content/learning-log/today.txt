@@ -1,0 +1,169 @@
+Title: Learning Log
+
+----
+
+Description: A little logbook of little things I learned, I don't learn something new every day, but I try to stay curious and always try to accumulate new knowledge on my journey through life.
+
+----
+
+Subtitle: A logbook of little things I learned over time
+
+----
+
+Today:
+
+- 
+  title: >
+    How to create a dynamic table of
+    contents
+  post_date: 2024-05-03
+- 
+  title: Create tooltips that act as cursor
+  post_date: 2024-05-04
+- 
+  title: >
+    Memory is the thing that will make AI so
+    powerful
+  post_date: 2024-05-05
+- 
+  title: >
+    A lot of people just accept the status
+    quo and don’t push forward
+  post_date: 2024-05-06
+- 
+  title: How bar logistics at a big concert work
+  post_date: 2024-05-08
+- 
+  title: How to build a mega menu in webflow
+  post_date: 2024-05-09
+- 
+  title: >
+    Value should be calculated not by the
+    time, but the value you create
+  post_date: 2024-05-10
+- 
+  title: >
+    How to make a complex desktop menu
+    responsive for mobile
+  post_date: 2024-05-11
+- 
+  title: "I'm a morning person and can't work efficiently in the evening/night"
+  post_date: 2024-05-12
+- 
+  title: >
+    Only because you messed something up
+    doesn’t mean the other side thinks
+    you’re not capable of your craft.
+    Mistakes happen
+  post_date: 2024-05-13
+- 
+  title: >
+    You’re pretty capable of a lot of
+    things, but sometimes it’s just not in
+    your power
+  post_date: 2024-05-14
+- 
+  title: How big corporate structures work
+  post_date: 2024-05-15
+- 
+  title: >
+    Sometimes you just need to push and
+    deliver
+  post_date: 2024-05-16
+- 
+  title: How to limit texts in css to three lines
+  post_date: 2024-05-23
+- 
+  title: Friendships are just great
+  post_date: 2024-05-25
+- 
+  title: >
+    Researching alone is hard, but
+    connecting with new people proficient in
+    that field is one of the best ways to
+    learn new things.
+  post_date: 2024-06-01
+- 
+  title: >
+    Joining an organization is a big network
+    booster
+  post_date: 2024-06-03
+- 
+  title: 'Learned how flex-grow & hypens work'
+  post_date: 2024-06-06
+- 
+  title: >
+    How to integrate AI into my coding
+    workflow
+  post_date: 2024-06-07
+- 
+  title: How blueprints work in Kirby
+  post_date: 2024-06-09
+- 
+  title: Building a custom code tooltip component
+  post_date: 2024-06-10
+- 
+  title: How to create structured tables in kirby
+  post_date: 2024-06-11
+- 
+  title: >
+    How to set inner shadows in webflow (way
+    more complicated than I thought)
+  post_date: 2024-06-12
+- 
+  title: How to use webhooks
+  post_date: 2024-06-13
+- 
+  title: How to build custom components in kirby
+  post_date: 2024-06-15
+- 
+  title: >
+    How to create a tetralemma (workshop
+    technique)
+  post_date: 2024-06-17
+- 
+  title: How to build adaptive layouts in kirby
+  post_date: 2024-06-18
+- 
+  title: >
+    How documentaries are filmed in a night
+    train
+  post_date: 2024-06-22
+- 
+  title: How to set dynamic OG images in kirby
+  post_date: 2024-06-30
+- 
+  title: >
+    How to structure a sprint for a saas
+    product
+  post_date: 2024-07-02
+- 
+  title: How seamless transitions work in webapps
+  post_date: 2024-07-04
+- 
+  title: How drawer components work in a web app
+  post_date: 2024-07-13
+- 
+  title: >
+    How to apply for student support in
+    Germany
+  post_date: 2024-07-10
+- 
+  title: Great people are living in Stockholm
+  post_date: 2024-07-06
+- 
+  title: >
+    Working while traveling by train or
+    plane is the ultimate procrastination
+    relieve
+  post_date: 2024-07-18
+- 
+  title: >
+    Our current world can be disrupted by a
+    single technical glitch. (Looking at you
+    Crowdstrike)
+  post_date: 2024-07-19
+
+----
+
+Uuid: IsgdOoOH8nB93tFM

@@ -1,0 +1,34 @@
+{
+  "name": "moritzkindler/portfolio",
+  "description": "Moritz Kindler Portfolio",
+  "type": "project",
+  "keywords": [
+    "MoritzKindler",
+    "Product Designer",
+    "Stockholm"
+  ],
+  "authors": [
+    {
+      "name": "Moritz Kindler",
+      "email": "moritz.j.kindler@gmail.com",
+      "homepage": "https://moritzkindler.com"
+    }
+  ],
+  "homepage": "https://moritzkindler.com",
+  "require": {
+    "php": "~8.1.0 || ~8.2.0 || ~8.3.0",
+    "getkirby/cms": "^4.0"
+  },
+  "config": {
+    "allow-plugins": {
+      "getkirby/composer-installer": true
+    },
+    "optimize-autoloader": true
+  },
+  "scripts": {
+    "start": [
+      "Composer\\Config::disableProcessTimeout",
+      "@php -S localhost:8000 kirby/router.php"
+    ]
+  }
+}

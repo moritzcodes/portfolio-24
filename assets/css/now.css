@@ -1,0 +1,33 @@
+
+.now-content {
+    margin-top: var(--spacing-lg);
+}
+.now-item {
+    position: relative;
+    margin-top: -101px;
+    margin-bottom: var(--spacing-xl);
+}
+.now-item h2 {
+    font-size: 16px;
+    margin-bottom: var(--spacing-sm);
+}
+
+.now-item img {
+    margin-top: var(--spacing-md);
+}
+
+.now-info {
+    text-align: right;
+}
+.now-date {
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+.now-category {
+    color: var(--secondary-color);
+    font-weight: 400;
+}
+.now-info.sticky-item {
+    transform: translateX(-100%);
+}
+

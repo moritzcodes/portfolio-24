@@ -1,0 +1,32 @@
+title: Project
+status:
+  draft: true
+  listed: true
+fields:
+  title:
+    label: Title
+    type: text
+  subtitle:
+    label: Subtitle
+    type: text
+  description:
+    label: Description
+    type: textarea
+  color:
+    label: Color Picker
+    type: color
+    default: "#ffffff"
+  cover:
+    label: Cover Image
+    type: files
+    max: 1
+  layout:
+    type: layout
+    layouts:
+      - "1/1"
+      - "1/2, 1/2"
+    fieldsets:
+      - heading
+      - text
+      - image
+
