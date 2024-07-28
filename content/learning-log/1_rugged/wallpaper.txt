@@ -1,0 +1,21 @@
+Title: Test
+
+----
+
+Description: 
+
+----
+
+Wallpaper: - file://kjqaiGJssd8msycN
+
+----
+
+Wallpaperalt: 
+
+----
+
+Toggle: false
+
+----
+
+Uuid: BWtDGVhdGY62ZMem
