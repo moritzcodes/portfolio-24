@@ -163,7 +163,30 @@ Today:
     single technical glitch. (Looking at you
     Crowdstrike)
   post_date: 2024-07-19
-
+-
+  title: >
+    The first telecommunication of Northern
+    Europe was built on the Lofoten Islands
+    (right next to our Airbnb).
+  post_date: 2024-07-20
+- 
+  title: >
+    How to create a dynamic interface ui
+    connected with an LLM
+  post_date: 2024-07-21
+- 
+  title: >
+    How to create complete react components
+    with Claude Sonnet
+  post_date: 2024-07-23
+- 
+  title: 'How to do a user interview '
+  post_date: 2024-07-24
+- 
+  title: >
+    Finally used mobbin.design the first
+    time and I like it so far
+  post_date: 2024-07-26
 ----
 
 Uuid: IsgdOoOH8nB93tFM
