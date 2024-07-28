@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <?php snippet('meta') ?>
-    <meta property="og:image" content="<?= e($page->template()->name() === 'now', $page->url() . '.png', url('assets/images/og-template.png')) ?>">
+    <meta property="og:image" content="<?= e($page->template()->name() === 'today', $page->url() . '.png', url('assets/images/og-template.png')) ?>">
 </head>
 <body>
     <?php snippet('nav') ?>

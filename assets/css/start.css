@@ -7,19 +7,19 @@
 .intro p {
     display: inline;
 }
-.intro a {
+.intro a, .btn{
     position: relative;
     color: var(--key-color);
     padding: 4px 6px;
     transition: color 0.3s ease;
 }
-.intro a:hover {
+.intro a:hover, .btn:hover {
     color: var(--key-color);
 }
-.intro a:hover::after {
+.intro a:hover::after, .btn:hover::after {
     background-color: var(--key-hover-background); 
 }
-.intro a::after {
+.intro a::after, .btn::after{
     content: "";
     display: inline-block;
     width: 100%;
@@ -28,18 +28,19 @@
     position: absolute;
     border-radius: 4px;
     left: 0;
+    top: 0;
     transition: background-color 0.3s ease;
 }
-.tooltip-readcv a {
+.tooltip-readcv a, .bstn {
     color: var(--primary-color); 
 }
-.tooltip-readcv a:hover {
+.tooltip-readcv a:hover, .bstn:hover {
     color: var(--primary-color); 
 }
-.tooltip-readcv a::after {
+.tooltip-readcv a::after, .btns::after {
     background-color: rgba(0, 0, 0, 0.05); 
 }
-.tooltip-readcv a:hover::after {
+.tooltip-readcv a:hover::after, .btsn:hover::after {
     background-color: rgba(0, 0, 0, 0.1); 
 }
 

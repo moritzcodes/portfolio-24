@@ -1,0 +1,7 @@
+type: pages
+label: Wallpaper
+parent: kirby.page("gallery")
+size: small
+template: wallpaper
+empty: No wallpaper yet
+

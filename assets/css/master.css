@@ -7,6 +7,7 @@
 @import url('project.css'); 
 @import url('footer.css'); 
 @import url('today.css'); 
+@import url('wallpaper.css'); 
 @import url('mobile.css'); 
 
 
@@ -17,9 +18,9 @@
     --primary-color: #000;
     --secondary-color: #616161;
     --bg-color: #fff;
-    --key-color: #315c42;
-    --key-background: rgba(92, 167, 122, 0.1);
-    --key-hover-background: rgba(92, 167, 122, 0.2);
+    --key-color: #1b3425;
+    --key-background: rgba(92, 167, 122, 0.171);
+    --key-hover-background: rgba(92, 167, 122, 0.3);
     --border-color: rgba(0, 0, 0, 0.1);
     --border-hover-color: rgba(0, 0, 0, 0.2);
     --border-radius: 8px;
@@ -143,6 +144,12 @@ img {
     border: var(--border-image);
   }
 
+img.no-shadow {
+    box-shadow: none;
+    border-radius: 0 !important;
+    border: none;
+}
+
 figcaption {
     font-size: 12px;
     line-height: 1.4;
@@ -179,4 +186,20 @@ iframe {
 .link-wrapper {
     display: flex;
     justify-content: center;
+}
+
+/* Card Item */
+.card-item {
+    padding: var(--spacing-sm);
+    border-radius: 22px;
+    background-image: var(--retro-background);
+    background-size: contain;
+    background-position: center;
+    border: 1px solid var(--border-color);
+    position: relative;
+    transition:  transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.card-item.card-hover:hover {
+    transform: rotateZ(1.5deg) scale(1.018);
 }

@@ -16,6 +16,7 @@ columns:
   - width: 1/2
     sections:
       projects: sections/projects
+      wallpapers: sections/wallpapers
 
 
 

@@ -1,0 +1,108 @@
+
+.wallpaper-img {
+    margin-top: var(--spacing-md);
+}
+.mockup-container {
+    position: relative;
+    margin-top: var(--spacing-lg);
+
+}
+.mockup-img {
+    position: relative;
+    z-index: 5;
+}
+.mockup-wrapper {
+    border: 1px solid black;
+}
+.mockup-link {
+    text-align: left;
+    margin: var(--spacing-lg) 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  
+}
+.mockup-link h3 {
+    margin: 0;
+}
+
+.wallpaper .btn::after {
+    border-radius: 12px;
+    left: -6px;
+    padding: var(--spacing-xs);
+    top: -6px;
+}
+
+.mockup-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin-top: var(--spacing-lg);
+    align-items: center;
+    margin-bottom: 82px;
+}
+
+
+.mockup-grid .mockup-container:hover {
+    opacity: 1;
+}
+.mockup-grid .mockup-container {
+    margin: 0 var(--spacing-lg);
+}
+.mockup-screen {
+    position: absolute;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.mockup-screen.mockup-macbook {
+    top: 2.7%;
+    left: 10.4%;
+    width: 79.1%;
+    height: 84.3%;
+}
+
+.mockup-screen.mockup-iphone {
+    top: 1.8%;
+    left: 4.3%;
+    width: 91.6%;
+    height: 95.9%;
+    border-radius: 10px;
+}
+
+.mockup-screen.mockup-watch {
+    top: 16.9%;
+    left: 10.5%;
+    width: 73.5%;
+    height: 60.5%;
+    border-radius: 10px;
+}
+
+.mockup-screen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Gallery */ 
+.gallery-section h2 {
+    margin-left: var(--spacing-sm);
+}
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-sm);
+}
+
+
+
+.gallery-item p {
+    font-family: 'Nanum Pen';
+    font-size: 20px;
+    color: var(--secondary-color);
+    text-align: right;
+    margin-top: var(--spacing-xs);
+}
