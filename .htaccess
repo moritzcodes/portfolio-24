@@ -106,3 +106,5 @@ Header set X-Content-Type-Options "nosniff"
    
 </IfModule>
 
+# Set PHP memory limit
+php_value memory_limit 256M
