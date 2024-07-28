@@ -8,8 +8,11 @@
  * All config options: https://getkirby.com/docs/reference/system/options
  */
 return [
-    'debug' => true,
+    'debug' => false,
     'home' => 'start',
+    'panel' =>[
+        'install' => true
+      ]
 ];
 
 
