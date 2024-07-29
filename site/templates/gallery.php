@@ -35,16 +35,16 @@
                         <section class="gallery-section">
                             <h2><?= $tag ?></h2>
                             <div class="gallery-grid">
-                                <div class="card-item card-hover">
                                     <?php foreach ($projects as $project): ?>
-                                        <a href="<?= $project->url() ?>" class="projects__item-link">
-                                            <article class="gallery-item">
-                                                <img src="<?= $project->wallpaper()->toFile()->thumb(['width'=> 800,'quality'=> 50,])->url() ?>" alt="Screen Content">
-                                                <p><?= $project->title() ?></p>
-                                            </article>
-                                        </a>
+                                        <div class="card-item card-hover">
+                                            <a href="<?= $project->url() ?>" class="projects__item-link">
+                                                <article class="gallery-item">
+                                                    <img src="<?= $project->wallpaper()->toFile()->thumb(['width'=> 800,'quality'=> 50,])->url() ?>" alt="Screen Content">
+                                                    <p><?= $project->title() ?></p>
+                                                </article>
+                                            </a>
+                                        </div>
                                     <?php endforeach ?>
-                                </div>
                             </div>
                         </section>
                     <?php endforeach ?>
