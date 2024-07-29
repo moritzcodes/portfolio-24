@@ -163,7 +163,7 @@ Today:
     single technical glitch. (Looking at you
     Crowdstrike)
   post_date: 2024-07-19
--
+- 
   title: >
     The first telecommunication of Northern
     Europe was built on the Lofoten Islands
@@ -187,6 +187,15 @@ Today:
     Finally used mobbin.design the first
     time and I like it so far
   post_date: 2024-07-26
+- 
+  title: How SVG noise filters work
+  post_date: 2024-07-28
+- 
+  title: >
+    How to use Craft Docs as my daily todo
+    list instead of tweek.so
+  post_date: 2024-07-29
+
 ----
 
 Uuid: IsgdOoOH8nB93tFM

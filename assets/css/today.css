@@ -3,7 +3,6 @@
 }
 .today-post {
     width: 100%;
-    margin-top: -2px;
 }
 .today-content table {
     border-collapse: collapse;
@@ -41,7 +40,8 @@
 }
 
 .today-post td {
-    padding: var(--spacing-sm)
+    padding: var(--spacing-sm);
+    padding-bottom: 10px;
 }
 
 .today-post td:first-child {

@@ -20,7 +20,7 @@ body {
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title><?= $page->title() ?> | <?= $site->title() ?></title>
-<link rel="stylesheet" defer href="<?= url('assets/css/master.css') ?>">
+<link rel="stylesheet" defer href="<?= url('assets/css/master.min.css') ?>">
 <link rel="icon" href="<?= url('assets/images/favicon.ico') ?>" type="image/png">
 <meta name="description" content="<?= $page->description() ?>">
 <meta property="og:title" content="<?= $page->title() ?> | <?= $site->title() ?>">

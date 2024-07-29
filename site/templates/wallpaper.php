@@ -11,7 +11,7 @@
             <?php snippet('start') ?>
             <!-- Mac Book -->
             <div class="mockup-container">
-                <img class="mockup-img no-shadow" src="<?= url('assets/images/wallpaper/device/light/macbook-screen-web.png') ?>" alt="MacBook Pro Mockup" class="mockup-image">
+                <img class="mockup-img no-shadow eager" src="<?= url('assets/images/wallpaper/device/light/macbook-screen-web.png') ?>" alt="MacBook Pro Mockup" class="mockup-image">
             <div class="mockup-screen mockup-macbook">
                 <?php
                 
@@ -24,7 +24,7 @@
                     1300 => '1.5x'
                   ]);
                 if($wallpaper): ?>
-                    <img class="no-shadow" src="<?= $wallpaper->thumb(['width'=> 1300,'quality'=> 70, 'format'=> 'webp'])->url() ?>" srcset="<?= $wallpaper->srcset([300, 600, 900, 1200, 1300]) ?>" alt="Screen Content">
+                    <img class="no-shadow eager" src="<?= $wallpaper->thumb(['width'=> 1300,'quality'=> 70, 'format'=> 'webp'])->url() ?>" srcset="<?= $wallpaper->srcset([300, 600, 900, 1200, 1300]) ?>" alt="Screen Content">
                 <?php endif; ?>
             </div>
             </div>

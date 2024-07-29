@@ -1,14 +1,14 @@
-@import url('reset.css');
-@import url('components.css');
-@import url('nav.css'); 
-@import url('start.css'); 
-@import url('about.css'); 
-@import url('now.css'); 
-@import url('project.css'); 
-@import url('footer.css'); 
-@import url('today.css'); 
-@import url('wallpaper.css'); 
-@import url('mobile.css'); 
+@import 'reset.css';
+@import 'components.css';
+@import 'nav.css';
+@import 'start.css';
+@import 'about.css';
+@import 'now.css';
+@import 'project.css';
+@import 'footer.css';
+@import 'today.css';
+@import 'wallpaper.css';
+@import 'mobile.css';
 
 
 /* Variables */
@@ -34,7 +34,7 @@
     --spacing-xs: 6px;
     --box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.02), 0px 2px 4px 0px rgba(0, 0, 0, 0.04);
     --tooltip-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.03), 0px 2px 8px 0px rgba(0, 0, 0, 0.04), 0px 0px 0px 1px #F0F0F0;
-    --retro-background: url(../images/about/bg-card.jpg);
+    --retro-background: url(../images/about/grain.svg);
     --fade-out: linear-gradient(to top, white, transparent);
 }
 @media (prefers-color-scheme: dark) {
@@ -48,7 +48,7 @@
         --key-background: rgba(255, 255, 255, 0.15);
         --key-hover-background: rgba(236, 255, 244, 0.3);
         --key-color: #ffffff;
-        --retro-background: url(../images/about/bg-card-dark.jpg);
+        --retro-background: url(../images/about/grain-dark.svg);
         --fade-out: linear-gradient(to top, black, transparent);
     }
 
@@ -95,10 +95,10 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
     -o-font-smoothing: antialiased;
-    ::selection {
-        background-color: var(--key-background); 
-        color: var(--key-color);
-    }
+}
+body::selection{
+    background-color: var(--key-background); 
+    color: var(--key-color);
 }
 h2 {
     font-size: 24px;
@@ -114,7 +114,7 @@ a {
     transition: color 0.3s ease;
     position: relative;
 }
-a.link::after, .layout-section a::after, .about-letter a::after {
+a.link::after, .layout-section a::after, .about-letter a::after, .blocks-section a::after {
     content: ' ';
     width: 100%;
     position: absolute;
@@ -192,9 +192,10 @@ iframe {
 .card-item {
     padding: var(--spacing-sm);
     border-radius: 22px;
-    background-image: var(--retro-background);
-    background-size: contain;
-    background-position: center;
+    background: var(--retro-background);
+    background-size: 250px 250px;
+    background-repeat: repeat;
+    background-position: left top;
     border: 1px solid var(--border-color);
     position: relative;
     transition:  transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);

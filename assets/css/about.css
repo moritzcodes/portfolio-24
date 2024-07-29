@@ -35,8 +35,9 @@
     border-radius: 24px;
     transform: rotateZ(-1deg);
     background-image: var(--retro-background);
-    background-size: contain;
-    background-position: center;
+    background-size: 250px 250px;
+    background-repeat: repeat;
+    background-position: left top;
     border: 1px solid var(--border-color);
     position: relative;
 }

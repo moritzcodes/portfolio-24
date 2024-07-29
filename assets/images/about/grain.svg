@@ -1,0 +1,17 @@
+
+
+<svg width="500" height="500" xmlns="http://www.w3.org/2000/svg">
+  <rect width='100%' height='100%' fill='white'/>
+  
+  <defs>
+    <filter id="paper-texture">
+      <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="10" result="noise"/>
+      <feDiffuseLighting in="noise" lighting-color="#FDF5EC" surfaceScale="8">
+        <feDistantLight azimuth="160" elevation="20"/>
+      </feDiffuseLighting>
+    </filter>
+  </defs>
+
+  <!-- Apply the filter to a rectangle -->
+  <rect width="100%" height="100%" filter="url(#paper-texture)" opacity=".06" />
+</svg>
