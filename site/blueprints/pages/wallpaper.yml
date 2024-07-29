@@ -3,6 +3,9 @@ fields:
   title:
     label: Title
     type: text
+  subtitle:
+    label: Subtitle
+    type: text
   tags:
     label: Tags
     type: tags

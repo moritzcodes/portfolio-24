@@ -19,7 +19,7 @@
                 <div class="about-short-grid">
                     <div class="img-card">
                     <?php if($image = $page->introimage()->toFile()): ?>
-                    <img src="<?= $image->url() ?>" alt="<?= $page->introimagealt()->kirbytext() ?>">
+                    <img class="eager" src="<?= $image->url() ?>" alt="<?= $page->introimagealt()->kirbytext() ?>">
                     <?php endif ?>
                         <p>
                         
