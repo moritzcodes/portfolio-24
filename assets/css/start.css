@@ -105,3 +105,64 @@
 .projects-item p {
     color: var(--secondary-color);
 }
+
+
+/* Playgorund */ 
+.playground-grid {
+    display: flex;
+    gap: var(--spacing-md);
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.playground-grid h2 {
+    margin-top: 0;
+    color: var(--primary-color);
+  
+}
+
+.playground-grid .card-header {
+    margin-bottom: var(--spacing-md);
+    margin-left: var(--spacing-sm);
+    margin-right: var(--spacing-sm);
+}
+.playground-grid a {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0;
+    min-width: 300px;
+
+}
+.playground-grid .card-item {
+
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.playground-grid .today-post {
+    flex-grow: 1;
+}
+
+.playground-grid .today-post td {
+    border-right: none !important;
+
+}
+.playground-grid .today-post td h3 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.playground-grid .mockup-container {
+    margin-top: 0;
+
+}
+
+.playground-grid .mockup-screen img {
+    border-radius: 0px !important;
+}
+.playground-grid .mockup-screen.mockup-macbook {
+    left: 10.1%;
+    width: 79.4%;
+}

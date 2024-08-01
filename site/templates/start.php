@@ -11,7 +11,7 @@
     <section class="intro">
             <p>I work as a freelance product designer. I currently shift my focus in crafting 
                 sustainable projects.
-                Currently I’m based in Hamburg, Germany and will be moving to Stockholm, Sweden soon.</br></br>
+                Currently I'm based in Hamburg, Germany and will be moving to Stockholm, Sweden soon.</br></br>
             </p>
 
             <p>You can contact me via 
@@ -63,31 +63,57 @@
 
         <section class="today-content">
             <div class="today-start">
-                <h2>Learning Log</h2>
+                <h2>Playground Feed</h2>
                 <p>
-                    A logbook of little things I learned, I don't learn something new every day, but I try to stay curious and always try to accumulate new knowledge on my journey through life.
+                    A little playgroud where I learn new stuff or just create a little demo.
                 </p>
             </div>
-            <div class="today-wrapper">
-            <table class="today-post">
-            
-            <?php if ($today = page('learning-log')): ?>
-                <?php $posts = $today->today()->toStructure()->sortBy('post_date', 'desc')->limit(8); ?>
-                <?php foreach ($posts as $post): ?>
-                        <tr>
-                        <td><p class="today-date"><?= date('d. F Y', strtotime($post->post_date()->value())) ?></p></td>
-
-                            <td><h2><?= $post->title() ?></h2></td>
-                        </tr>
-                <?php endforeach ?>
-                <?php else: ?>
-                <p>No posts found.</p>
-            <?php endif ?>
-                </table>
+            <div class="playground-grid">
+            <a href="<?= url('gallery') ?>">
+                <div class="card-item card-hover">
+                    <div class="card-header">
+                        <h2>Wallpaper</h2>
+                        <p>Download curated high-quality photos taken by me</p>
+                    </div>
+                    <?php if ($gallery = page('gallery')): ?>
+                        <?php if ($images = $gallery->children()->sortBy('date', 'desc')->first()): ?>
+                            <?php if ($image = $images->image()->toFile()): ?>
+                                <div class="mockup-container">
+                                    <img class="mockup-img no-shadow lazy" data-src="<?= url('assets/images/wallpaper/device/light/macbook-screen-web.png') ?>" alt="MacBook Pro Mockup" class="mockup-image">
+                                    <div class="mockup-screen mockup-macbook">
+                                    <img class="lazy" data-src="<?= $images->wallpaper()->toFile()->thumb(['width'=> 800,'quality'=> 50,])->url() ?>" alt="Screen Content">
+                                        <?php endif; ?>
+                                    </div>
+                                </div>     
+                        <?php endif ?>
+                    <?php else: ?>
+                        <p>Gallery page not found.</p>
+                    <?php endif ?>
                 </div>
-                <div class="link-wrapper">
-                <a class="link" href="<?= url('learning-log') ?>">See all my learnings</a>
+            </a>
+            <a href="<?= url('learning-log') ?>">
+                <div class="card-item card-hover">
+                    <div class="card-header">
+                        <h2>Learning Log</h2>
+                        <p>A logbook of little things I learned over time</p>
+                    </div>
+                <div class="today-wrapper">
+                    <table class="today-post">
+                    <?php if ($today = page('learning-log')): ?>
+                        <?php $posts = $today->today()->toStructure()->sortBy('post_date', 'desc')->limit(3); ?>
+                        <?php foreach ($posts as $post): ?>
+                                <tr>
+                                    <td><h3><?= $post->title() ?></h3></td>
+                                </tr>
+                        <?php endforeach ?>
+                        <?php else: ?>
+                        <p>No posts found.</p>
+                    <?php endif ?>
+                        </table>
+                    </div>
                 </div>
+            </a>
+            </div>
                 </section>
     </main>
     <?php snippet('footer') ?>

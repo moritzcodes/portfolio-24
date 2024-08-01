@@ -97,6 +97,12 @@
     margin-top: var(--spacing-sm);
 }
 
+.gallery-grid img {
+    height: 184px;
+    width: 100%;
+    object-fit: cover;
+}
+
 
 
 .gallery-item p {

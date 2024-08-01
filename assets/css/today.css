@@ -21,12 +21,13 @@
 .today-content tr:last-child {
     margin-bottom: -1px;
 }
-.today-post h2 {
+.today-post h3 {
     font-size: 16px;
     margin-top: 0;
     margin-bottom: 0;
     width: 100%;
     display: block;
+    line-height: 1.6;
 }
 .today-post {
     width: 100%;
@@ -41,7 +42,7 @@
 
 .today-post td {
     padding: var(--spacing-sm);
-    padding-bottom: 10px;
+    padding-bottom: 14px;
 }
 
 .today-post td:first-child {
@@ -63,7 +64,7 @@
     position: relative;
 }
 .today-wrapper::after {
-    content: ' ';
+    content: none;
     background: var(--fade-out);
     z-index: 10;
     width: calc(100% + 20px);
@@ -72,6 +73,7 @@
     left: -10px;
     right: -10px;
     height: 72%;
+    border-radius: var(--border-radius);
 }
 .today-content .link-wrapper {
     margin-top: var(--spacing-md);

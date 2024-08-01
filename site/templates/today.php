@@ -16,7 +16,7 @@
                         <tr>
                         <td><p class="today-date"><?= date('d. F Y', strtotime($post->post_date()->value())) ?></p></td>
 
-                            <td><h2><?= $post->title() ?></h2></td>
+                            <td><h3><?= $post->title() ?></h3></td>
                         </tr>
                 <?php endforeach ?>
                 </table>

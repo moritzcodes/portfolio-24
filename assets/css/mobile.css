@@ -49,6 +49,13 @@
         transform: translateY(95%);
         right: 0;
         }
+    /* PLAYGROUND */ 
+    .playground-grid {
+        flex-direction: column;
+    }
+    .playground-grid a {
+        min-width: none;
+    }
 }
 
 
