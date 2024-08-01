@@ -47,7 +47,8 @@
                     <article class="projects-item">
                         <div class="projects-image" style="background-color: <?= $project->color() ?>">
                             <?php if($project->cover()->toFile()): ?>
-                                <img src="<?= $project->cover()->toFile()->url() ?>" alt="<?= $project->title() ?>">
+                                <img
+                                    class="lazy" data-src="<?= $project->cover()->toFile()->url() ?>" alt="<?= $project->title() ?>">
                             <?php endif ?>
                         </div>
                         <h2><?= $project->title() ?> <span><?= $project->subtitle() ?></span></h2>

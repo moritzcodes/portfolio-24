@@ -7,4 +7,5 @@
         </ul>
     </nav>
 </footer>
+<script src="<?= url('assets/js/lazyload.min.js') ?>"></script>
 <script src="<?= url('assets/js/index.js') ?>"></script>

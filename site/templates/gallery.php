@@ -39,7 +39,7 @@
                                         <div class="card-item card-hover">
                                             <a href="<?= $project->url() ?>" class="projects__item-link">
                                                 <article class="gallery-item">
-                                                    <img src="<?= $project->wallpaper()->toFile()->thumb(['width'=> 800,'quality'=> 50,])->url() ?>" alt="Screen Content">
+                                                    <img class="lazy" data-src="<?= $project->wallpaper()->toFile()->thumb(['width'=> 800,'quality'=> 50,])->url() ?>" alt="Screen Content">
                                                     <p><?= $project->title() ?></p>
                                                 </article>
                                             </a>

@@ -60,6 +60,14 @@
     font-size: 20px;
 }
 
+.start-content a {
+    font-size: 20px;
+    display: inline-block;
+    margin-top: var(--spacing-sm);
+
+}
+
+
 
 /* Sticky Item */ 
 .sticky-item{

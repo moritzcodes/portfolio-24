@@ -12,7 +12,7 @@
                             snippet('blocks/text', ['block' => $block]);
                             break;
                         case 'image':
-                            snippet('blocks/image', ['block' => $block]);
+                            snippet('blocks/image', ['block' => $block, 'data-src' => true]);
                             break;
                         case 'table':
                             snippet('blocks/table', ['block' => $block]);
