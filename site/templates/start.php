@@ -76,7 +76,7 @@
                         <p>Download curated high-quality photos taken by me</p>
                     </div>
                     <?php if ($gallery = page('gallery')): ?>
-                        <?php if ($images = $gallery->children()->sortBy('date', 'desc')->first()): ?>
+                        <?php if ($images = $gallery->children()->first()): ?>
                             <?php if ($image = $images->image()->toFile()): ?>
                                 <div class="mockup-container">
                                     <img class="mockup-img no-shadow lazy" data-src="<?= url('assets/images/wallpaper/device/light/macbook-screen-web.png') ?>" alt="MacBook Pro Mockup" class="mockup-image">
