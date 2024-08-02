@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <?php snippet('meta') ?>
-    <meta property="og:image" content="<?= e($page->template()->name() === 'wallpaper', $page->url() . '.png', url('assets/images/og-template.png')) ?>">
+    <meta property="og:image" content="<?= e($page->template()->name() === 'wallpaper', $page->url() . '.png', url('assets/images/og-template.png')) ?>"> 
 </head>
 <body>
     <?php snippet('nav') ?>
@@ -14,7 +14,12 @@
                 <img class="mockup-img no-shadow lazy" data-src="<?= url('assets/images/wallpaper/device/light/macbook-screen-web.png') ?>" alt="MacBook Pro Mockup" class="mockup-image">
                 <div class="mockup-screen mockup-macbook">
                     <?php if ($wallpaper = $page->wallpaper()->toFile()): ?>
-                        <img class="no-shadow lazy" data-src="<?= $wallpaper->thumb(['width'=> 1300,'quality'=> 70, 'format'=> 'webp'])->url() ?>" data-srcset="<?= $wallpaper->srcset([300, 600, 900, 1200, 1300]) ?>" alt="Screen Content">
+                        <img class="no-shadow lazy" 
+                            data-src="<?= $wallpaper->thumb(['width'=> 1300,'quality'=> 70, 'format'=> 'webp'])->url() ?>" 
+                            
+                            src="<?= $wallpaper->thumb(['width'=> 50,'quality'=> 20, 'blur'=> 40, 'format'=> 'webp'])->url() ?>" 
+                            
+                            data-srcset="<?= $wallpaper->srcset([300, 600, 900, 1200, 1300]) ?>" alt="Screen Content">
                     <?php endif; ?>
                 </div>
             </div>
@@ -37,7 +42,12 @@
                     <img class="mockup-img no-shadow lazy" data-src="<?= url('assets/images/wallpaper/device/' . ($page->toggle()->toBool() ? 'dark/iphone-dark-web.png' : 'light/iphone-screen-web.png')) ?>" alt="Iphone 15 Pro Mockup" class="mockup-image">
                     <div class="mockup-screen mockup-iphone">
                         <?php if ($wallpaper): ?>
-                            <img class="no-shadow lazy" data-src="<?= $wallpaper->thumb(['height'=> 700,'quality'=> 40, 'format'=> 'webp'])->url() ?>" data-srcset="<?= $wallpaper->srcset([300, 600, 900, 1200, 1300]) ?>" alt="Screen Content">
+                            <img class="no-shadow lazy" 
+                                data-src="<?= $wallpaper->thumb(['height'=> 700,'quality'=> 40, 'format'=> 'webp'])->url() ?>" 
+
+                                src="<?= $wallpaper->thumb(['width'=> 50,'quality'=> 20, 'blur'=> 40, 'format'=> 'webp'])->url() ?>" 
+
+                                data-srcset="<?= $wallpaper->srcset([300, 600, 900, 1200, 1300]) ?>" alt="Screen Content">
                         <?php endif; ?>
                     </div>
                 </div>
@@ -47,7 +57,12 @@
                     <img class="mockup-img no-shadow lazy" data-src="<?= url('assets/images/wallpaper/device/' . ($page->toggle()->toBool() ? 'dark/watch-screen-dark.png' : 'light/watch-screen-light.png')) ?>" alt="Apple Watch Ultra Mockup" class="mockup-image">
                     <div class="mockup-screen mockup-watch">
                         <?php if ($wallpaper): ?>
-                            <img class="no-shadow lazy" data-src="<?= $wallpaper->thumb(['height'=> 400,'quality'=> 40, 'format'=> 'webp'])->url() ?>" data-srcset="<?= $wallpaper->srcset([300, 600, 900, 1200, 1300]) ?>" alt="Screen Content">
+                            <img class="no-shadow lazy" 
+                            data-src="<?= $wallpaper->thumb(['height'=> 400,'quality'=> 40, 'format'=> 'webp'])->url() ?>" 
+
+                            src="<?= $wallpaper->thumb(['width'=> 50,'quality'=> 20, 'blur'=> 40, 'format'=> 'webp'])->url() ?>" 
+                            
+                            data-srcset="<?= $wallpaper->srcset([300, 600, 900, 1200, 1300]) ?>" alt="Screen Content">
                         <?php endif; ?>
                     </div>
                 </div>

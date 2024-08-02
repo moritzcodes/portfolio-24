@@ -122,9 +122,7 @@
 }
 
 .playground-grid .card-header {
-    margin-bottom: var(--spacing-md);
-    margin-left: var(--spacing-sm);
-    margin-right: var(--spacing-sm);
+    margin-bottom: var(--spacing-sm);
 }
 .playground-grid a {
     display: flex;

@@ -81,7 +81,7 @@
                                 <div class="mockup-container">
                                     <img class="mockup-img no-shadow lazy" data-src="<?= url('assets/images/wallpaper/device/light/macbook-screen-web.png') ?>" alt="MacBook Pro Mockup" class="mockup-image">
                                     <div class="mockup-screen mockup-macbook">
-                                    <img class="lazy" data-src="<?= $images->wallpaper()->toFile()->thumb(['width'=> 800,'quality'=> 50,])->url() ?>" alt="Screen Content">
+                                    <img class="lazy" data-src="<?= $images->wallpaper()->toFile()->thumb(['width'=> 600,'quality'=> 50,])->url() ?>" alt="Screen Content">
                                         <?php endif; ?>
                                     </div>
                                 </div>     

@@ -1,5 +1,5 @@
 <?php
-$canvas = imagecreatetruecolor(1200, 630);
+$canvas = imagecreatetruecolor(1200, 628);
 $backgroundColor = imagecolorallocate($canvas, 255, 255, 255);
 $textColor       = imagecolorallocate($canvas, 0, 0, 0);
 
@@ -21,3 +21,4 @@ imagecopyresampled($canvas, $logo, 32, 488, 0, 0, 375, 110, imagesx($logo), imag
 // Output image to the browser
 imagepng($canvas);
 imagedestroy($canvas);
+
