@@ -1,13 +1,17 @@
 title: Gallery
-fields:
-  title:
-    label: Title
-    type: text
-  subtitle:
-    label: Subtitle
-    type: text
-  description:
-    label: Meta Description
-    type: text
 
-
+columns:
+  - width: 1/2
+    fields:
+      title:
+        label: Title
+        type: text
+      subtitle:
+        label: Subtitle
+        type: text
+      description:
+        label: Meta Description
+        type: text
+  - width: 1/2
+    sections:
+      wallpapers: sections/wallpapers

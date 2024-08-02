@@ -16,8 +16,10 @@ columns:
   - width: 1/2
     sections:
       projects: sections/projects
-      wallpapers: sections/wallpapers
-
+      gallery: 
+        type: pages
+        templates: 
+          - gallery
 
 
        
