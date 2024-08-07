@@ -36,7 +36,7 @@
 }
 .today-post tr {
     display: grid;
-    grid-template-columns: minmax(140px, auto) 1fr ;
+    grid-template-columns: minmax(180px, auto) 1fr ;
 
 }
 

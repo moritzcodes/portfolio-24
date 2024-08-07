@@ -5,8 +5,8 @@
   
   <defs>
     <filter id="paper-texture">
-      <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="10" result="noise"/>
-      <feDiffuseLighting in="noise" lighting-color="#FDF5EC" surfaceScale="6">
+      <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="6" result="noise"/>
+      <feDiffuseLighting in="noise" lighting-color="#FDF5EC" surfaceScale="4">
         <feDistantLight azimuth="160" elevation="20"/>
       </feDiffuseLighting>
     </filter>
