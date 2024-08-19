@@ -9,9 +9,7 @@
     <?php snippet('nav') ?>
     <main>
     <section class="intro">
-            <p>I work as a freelance product designer. I currently shift my focus in crafting 
-                sustainable projects.
-                Currently I'm based in Hamburg, Germany and will be moving to Stockholm, Sweden soon.</br></br>
+            <p><?= $page->intro()->kirbytext() ?></br></br>
             </p>
 
             <p>You can contact me via 
