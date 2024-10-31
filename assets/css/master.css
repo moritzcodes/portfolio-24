@@ -34,7 +34,7 @@
     --spacing-xs: 6px;
     --box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.02), 0px 2px 4px 0px rgba(0, 0, 0, 0.04);
     --tooltip-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.03), 0px 2px 8px 0px rgba(0, 0, 0, 0.04), 0px 0px 0px 1px #F0F0F0;
-    --retro-background: rgba(0, 0, 0, .025);
+    --retro-background: rgba(0, 0, 0, .01);
     --fade-out: linear-gradient(to top, white, transparent);
 }
 
@@ -49,7 +49,7 @@
         --key-background: rgba(255, 255, 255, 0.15);
         --key-hover-background: rgba(236, 255, 244, 0.3);
         --key-color: #ffffff;
-        --retro-background: rgba(255, 255, 255, .025);
+        --retro-background: rgba(255, 255, 255, .01);
         --fade-out: linear-gradient(to top, black, transparent);
     }
     body {
