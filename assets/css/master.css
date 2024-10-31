@@ -10,8 +10,8 @@
 @import 'wallpaper.css';
 @import 'mobile.css';
 
-
 /* Variables */
+
 :root {
     --max-width: 630px;
     --font-family: 'Matter', sans-serif;
@@ -34,11 +34,12 @@
     --spacing-xs: 6px;
     --box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.02), 0px 2px 4px 0px rgba(0, 0, 0, 0.04);
     --tooltip-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.03), 0px 2px 8px 0px rgba(0, 0, 0, 0.04), 0px 0px 0px 1px #F0F0F0;
-    --retro-background: url(../images/about/grain.svg);
+    --retro-background: rgba(0, 0, 0, .025);
     --fade-out: linear-gradient(to top, white, transparent);
 }
+
 @media (prefers-color-scheme: dark) {
-    :root {
+     :root {
         --primary-color: #EBEBEB;
         --secondary-color: #b6b6b6;
         --bg-color: #000000;
@@ -48,44 +49,39 @@
         --key-background: rgba(255, 255, 255, 0.15);
         --key-hover-background: rgba(236, 255, 244, 0.3);
         --key-color: #ffffff;
-        --retro-background: url(../images/about/grain-dark.svg);
+        --retro-background: rgba(255, 255, 255, .025);
         --fade-out: linear-gradient(to top, black, transparent);
     }
-
     body {
         background-color: var(--bg-color);
         color: var(--primary-color);
     }
-
     a {
         color: var(--secondary-color);
     }
-
     a:hover {
         color: var(--primary-color);
     }
-
     .tooltip-readcv a::after {
         background-color: rgba(255, 255, 255, 0.15);
     }
     .tooltip-readcv a:hover::after {
         background-color: rgba(236, 255, 244, 0.3);
     }
-    
     .tooltip-twitter a::after {
-        background-color: rgba(29,161,242,.15); 
+        background-color: rgba(29, 161, 242, .15);
     }
-
     .tooltip-twitter a:hover::after {
-        background-color: rgba(29,161,242,.25); 
+        background-color: rgba(29, 161, 242, .25);
     }
-
     .background-project {
         opacity: .1;
     }
 }
 
+
 /* General */
+
 body {
     font-family: var(--font-family), 'SF Pro', 'Inter', 'Arial', sans-serif;
     color: var(--primary-color);
@@ -96,25 +92,33 @@ body {
     -moz-font-smoothing: antialiased;
     -o-font-smoothing: antialiased;
 }
-body::selection{
-    background-color: var(--key-background); 
+
+body::selection {
+    background-color: var(--key-background);
     color: var(--key-color);
 }
+
 h2 {
     font-size: 24px;
     font-weight: 600;
     line-height: 1.4
 }
+
 p {
     line-height: 1.6;
 }
+
 a {
     color: var(--secondary-color);
     text-decoration: none;
     transition: color 0.3s ease;
     position: relative;
 }
-a.link::after, .layout-section a::after, .about-letter a::after, .blocks-section a::after {
+
+a.link::after,
+.layout-section a::after,
+.about-letter a::after,
+.blocks-section a::after {
     content: ' ';
     width: 100%;
     position: absolute;
@@ -124,25 +128,29 @@ a.link::after, .layout-section a::after, .about-letter a::after, .blocks-section
     background-color: var(--border-color);
     transition: background-color 200ms ease;
 }
+
 a:hover {
     color: var(--primary-color);
 }
-a.link:hover::after, .layout-section a:hover::after, .about-letter a:hover::after  {
+
+a.link:hover::after,
+.layout-section a:hover::after,
+.about-letter a:hover::after {
     background-color: var(--border-hover-color);
 }
+
 main {
     max-width: var(--max-width);
     width: 94vw;
     margin: var(--spacing-xl) auto;
 }
 
-
 img {
     width: 100%;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
     border: var(--border-image);
-  }
+}
 
 img.no-shadow {
     box-shadow: none;
@@ -157,6 +165,7 @@ figcaption {
     margin-top: var(--spacing-xs);
     margin-left: var(--spacing-xs);
 }
+
 sub {
     font-size: 50%;
     margin-left: .5px;
@@ -188,7 +197,9 @@ iframe {
     justify-content: center;
 }
 
+
 /* Card Item */
+
 .card-item {
     padding: var(--spacing-sm);
     border-radius: 22px;
@@ -198,7 +209,7 @@ iframe {
     background-position: left top;
     border: 1px solid var(--border-color);
     position: relative;
-    transition:  transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .card-item.card-hover:hover {
