@@ -1,18 +1,15 @@
 # System files
 # ------------
-
 Icon
 .DS_Store
 
 # Temporary files
 # ---------------
-
 /media/*
 !/media/index.html
 
 # Lock files
 # ---------------
-
 .lock
 
 # Editors
@@ -28,24 +25,25 @@ Icon
 
 # Cache Files
 # ---------------
-
 /site/cache/*
 !/site/cache/index.html
 
 # Accounts
 # ---------------
-
 /site/accounts/*
 !/site/accounts/index.html
 
 # Sessions
 # ---------------
-
 /site/sessions/*
 !/site/sessions/index.html
 
 # License
 # ---------------
-
 /site/config/.license
 /site/config/config.starterkit.test.php
+
+# Exclude content folder and everything in it
+# --------------------------------------------
+/content/*
+/content/
