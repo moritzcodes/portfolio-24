@@ -6,6 +6,7 @@
     font-style: normal;
 }
 
+
 @font-face {
     font-family: 'Matter';
     src: url('../assets/fonts/matter/Matter-SemiBold.woff2') format('woff2');
