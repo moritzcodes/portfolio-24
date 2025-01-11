@@ -17,9 +17,13 @@ fields:
     type: color
     default: "#ffffff"
   cover:
-    label: Cover Image
+    label: Cover Image/Video
     type: files
     max: 1
+    accept:
+      type: 
+        - image
+        - video
   layout:
     type: layout
     layouts:
@@ -29,4 +33,3 @@ fields:
       - heading
       - text
       - image
-
