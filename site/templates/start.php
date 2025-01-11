@@ -38,15 +38,31 @@
                 </div>
             </p>
         </section>
-        <section class="projects">
+              <section class="projects">
             <?php if ($work = page('work')): ?>
             <?php foreach ($work->children() as $project): ?>
                 <a href="<?= $project->url() ?>" class="projects__item-link">
                     <article class="projects-item">
                         <div class="projects-image" style="background-color: <?= $project->color() ?>">
                             <?php if($project->cover()->toFile()): ?>
-                                <img
-                                    class="lazy" data-src="<?= $project->cover()->toFile()->url() ?>" alt="<?= $project->title() ?>">
+                                <?php if($project->cover()->toFile()->type() === 'video'): ?>
+                                    <video 
+                                        autoplay 
+                                        loop 
+                                        muted 
+                                        playsinline
+                                        class="lazy"
+                                        data-src="<?= $project->cover()->toFile()->url() ?>"
+                                    >
+                                        <source src="<?= $project->cover()->toFile()->url() ?>" type="<?= $project->cover()->toFile()->mime() ?>">
+                                    </video>
+                                <?php else: ?>
+                                    <img
+                                        class="lazy" 
+                                        data-src="<?= $project->cover()->toFile()->url() ?>" 
+                                        alt="<?= $project->title() ?>"
+                                    >
+                                <?php endif ?>
                             <?php endif ?>
                         </div>
                         <h2><?= $project->title() ?> <span><?= $project->subtitle() ?></span></h2>
