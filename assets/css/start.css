@@ -110,13 +110,16 @@
 }
 
 .projects-image:hover img {
-    transform: translateY(-6px);
+    /* transform: translateY(-6px);*/
     box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.10), 0px 16px 15px 0px rgba(0, 0, 0, 0.08);
 }
+
 .projects-item h2 span {
     color: var(--secondary-color);
     transition: color 0.3s ease;
 }
+
+
 /*
 .projects__item:hover h2 span {
     color: var(--primary-color);
@@ -128,12 +131,14 @@
     color: var(--primary-color);
     margin-top: var(--spacing-md);
 }
+
 .projects-item p {
     color: var(--secondary-color);
 }
 
 
-/* Playgorund */ 
+/* Playgorund */
+
 .playground-grid {
     display: flex;
     gap: var(--spacing-md);
@@ -144,21 +149,20 @@
 .playground-grid h2 {
     margin-top: 0;
     color: var(--primary-color);
-  
 }
 
 .playground-grid .card-header {
     margin-bottom: var(--spacing-sm);
 }
+
 .playground-grid a {
     display: flex;
     flex-direction: column;
     flex: 1 1 0;
     min-width: 300px;
-
 }
-.playground-grid .card-item {
 
+.playground-grid .card-item {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -171,21 +175,22 @@
 
 .playground-grid .today-post td {
     border-right: none !important;
-
 }
+
 .playground-grid .today-post td h3 {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
 .playground-grid .mockup-container {
     margin-top: 0;
-
 }
 
 .playground-grid .mockup-screen img {
     border-radius: 0px !important;
 }
+
 .playground-grid .mockup-screen.mockup-macbook {
     left: 10.1%;
     width: 79.4%;
