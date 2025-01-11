@@ -21,8 +21,8 @@
     --key-color: #1b3425;
     --key-background: rgba(92, 167, 122, 0.171);
     --key-hover-background: rgba(92, 167, 122, 0.3);
-    --border-color: rgba(0, 0, 0, 0.1);
-    --border-hover-color: rgba(0, 0, 0, 0.2);
+    --border-color: #0000001a;
+    --border-hover-color: #00000033;
     --border-radius: 8px;
     --border: 1px solid var(--border-color);
     --border-image: 1px solid var(--border-color);

@@ -99,6 +99,7 @@
     padding: /*var(--spacing-lg)*/
     0;
     box-shadow: var(--border-project), var(--box-shadow);
+    border: var(--border);
 }
 
 .projects-image img {

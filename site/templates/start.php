@@ -43,7 +43,8 @@
             <?php foreach ($work->children() as $project): ?>
                 <a href="<?= $project->url() ?>" class="projects__item-link">
                     <article class="projects-item">
-                        <div class="projects-image" style="background-color: <?= $project->color() ?>">
+                        <!-- <div class="projects-image" style="background-color: <?= $project->color() ?>"> -->
+                     <div class="projects-image" > 
                             <?php if($project->cover()->toFile()): ?>
                                 <?php if($project->cover()->toFile()->type() === 'video'): ?>
                                     <video 
