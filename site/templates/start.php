@@ -95,35 +95,37 @@
               <section class="projects">
             <?php if ($work = page('work')): ?>
             <?php foreach ($work->children() as $project): ?>
-                <a href="<?= $project->url() ?>" class="projects__item-link">
+                <!-- <a href="<?= $project->url() ?>" class="projects__item-link"> -->
                     <article class="projects-item">
                         <!-- <div class="projects-image" style="background-color: <?= $project->color() ?>"> -->
                      <div class="projects-image" > 
                             <?php if($project->cover()->toFile()): ?>
                                 <?php if($project->cover()->toFile()->type() === 'video'): ?>
                                     <video 
-                                        autoplay 
+                                        data-autoplay
                                         loop 
                                         muted 
                                         playsinline
-                                        class="lazy"
-                                        data-src="<?= $project->cover()->toFile()->url() ?>"
+                                        src="<?= $project->cover()->toFile()->url() ?>"
                                     >
-                                        <source src="<?= $project->cover()->toFile()->url() ?>" type="<?= $project->cover()->toFile()->mime() ?>">
                                     </video>
                                 <?php else: ?>
-                                    <img
-                                        class="lazy" 
-                                        data-src="<?= $project->cover()->toFile()->url() ?>" 
-                                        alt="<?= $project->title() ?>"
-                                    >
+                                    <div class="image-wrapper">
+                                        <img
+                                            loading="lazy"
+                                            data-src="<?= $project->cover()->toFile()->url() ?>" 
+                                            alt="<?= $project->title() ?>"
+                                            width="<?= $project->cover()->toFile()->width() ?>"
+                                            height="<?= $project->cover()->toFile()->height() ?>"
+                                        >
+                                    </div>
                                 <?php endif ?>
                             <?php endif ?>
                         </div>
                         <h2><?= $project->title() ?> <span><?= $project->subtitle() ?></span></h2>
                         <p><?= $project->description()->kirbytext() ?></p>
                     </article>
-                </a>
+                <!-- </a> -->
             <?php endforeach ?>
             <?php else: ?>
                 <p>No projects found.</p>

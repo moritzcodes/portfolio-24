@@ -64,6 +64,48 @@
     <main>
         <?php snippet('start') ?>
         <div class="project-container">
+            <?php if($image = $page->cover()->toFile()): ?>
+                <?php if($image->type() === 'video'): ?>
+                    <video 
+                        data-autoplay
+                        loop 
+                        muted 
+                        playsinline
+                        src="<?= $image->url() ?>"
+                    ></video>
+                <?php else: ?>
+                    <div class="image-wrapper">
+                        <img
+                            loading="lazy"
+                            data-src="<?= $image->url() ?>"
+                            alt="<?= $page->title() ?>"
+                            width="<?= $image->width() ?>"
+                            height="<?= $image->height() ?>"
+                        >
+                    </div>
+                <?php endif ?>
+            <?php endif ?>
+            <?php foreach ($page->gallery()->toFiles() as $image): ?>
+                <?php if($image->type() === 'video'): ?>
+                    <video 
+                        data-autoplay
+                        loop 
+                        muted 
+                        playsinline
+                        src="<?= $image->url() ?>"
+                    ></video>
+                <?php else: ?>
+                    <div class="image-wrapper">
+                        <img
+                            loading="lazy"
+                            data-src="<?= $image->url() ?>"
+                            alt="<?= $page->title() ?> gallery image"
+                            width="<?= $image->width() ?>"
+                            height="<?= $image->height() ?>"
+                        >
+                    </div>
+                <?php endif ?>
+            <?php endforeach ?>
             <?php snippet('layout', ['page' => $page]) ?>
         </div>
     </main>

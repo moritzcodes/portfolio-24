@@ -79,7 +79,15 @@
                                         <div class="card-item card-hover">
                                             <a href="<?= $project->url() ?>" class="projects__item-link">
                                                 <article class="gallery-item">
-                                                    <img class="lazy" data-src="<?= $project->wallpaper()->toFile()->thumb(['width'=> 800,'quality'=> 50,])->url() ?>" alt="Screen Content">
+                                                    <div class="image-wrapper">
+                                                        <img
+                                                            loading="lazy"
+                                                            data-src="<?= $project->wallpaper()->toFile()->thumb(['width'=> 800,'quality'=> 50,])->url() ?>"
+                                                            alt="<?= $project->title() ?>"
+                                                            width="800"
+                                                            height="<?= round(800 * $project->wallpaper()->toFile()->height() / $project->wallpaper()->toFile()->width()) ?>"
+                                                        >
+                                                    </div>
                                                     <p><?= $project->title() ?></p>
                                                 </article>
                                             </a>
