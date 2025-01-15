@@ -3,7 +3,61 @@
 <head>
     <?php snippet('meta') ?>
     <meta property="og:image" content="<?= url('assets/images/og-template.png') ?>">
-    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Video intersection observer
+            const videos = document.querySelectorAll('video[data-autoplay]');
+            const videoObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.play();
+                    } else {
+                        entry.target.pause();
+                    }
+                });
+            }, { threshold: 0.5 });
+            videos.forEach(video => videoObserver.observe(video));
+
+            // Enhanced lazy loading
+            if ('loading' in HTMLImageElement.prototype) {
+                // Native lazy loading available
+                document.querySelectorAll('img[data-src]').forEach(img => {
+                    img.src = img.dataset.src;
+                    img.removeAttribute('data-src');
+                });
+            } else {
+                // Fallback for browsers that don't support native lazy loading
+                const imageObserver = new IntersectionObserver((entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const img = entry.target;
+                            img.src = img.dataset.src;
+                            img.onload = () => img.classList.add('loaded');
+                            observer.unobserve(img);
+                        }
+                    });
+                });
+
+                document.querySelectorAll('img[data-src]').forEach(img => {
+                    imageObserver.observe(img);
+                });
+            }
+        });
+    </script>
+    <style>
+        .image-wrapper {
+            position: relative;
+            background: #f0f0f0;
+            overflow: hidden;
+        }
+        img {
+            opacity: 1;
+            transition: opacity 0.3s ease-in-out;
+        }
+        img:not([src]) {
+            opacity: 0;
+        }
+    </style>
 </head>
 <body>
     <?php snippet('nav') ?>
@@ -94,12 +148,21 @@
                         <?php if ($images = $gallery->children()->first()): ?>
                             <?php if ($image = $images->image()->toFile()): ?>
                                 <div class="mockup-container">
-                                    <img class="mockup-img no-shadow lazy" data-src="<?= url('assets/images/wallpaper/device/light/macbook-screen-web.png') ?>" alt="MacBook Pro Mockup" class="mockup-image">
+                                    <img 
+                                        class="mockup-img no-shadow" 
+                                        loading="lazy"
+                                        data-src="<?= url('assets/images/wallpaper/device/light/macbook-screen-web.png') ?>" 
+                                        alt="MacBook Pro Mockup"
+                                    >
                                     <div class="mockup-screen mockup-macbook">
-                                    <img class="lazy" data-src="<?= $images->wallpaper()->toFile()->thumb(['width'=> 600,'quality'=> 50,])->url() ?>" alt="Screen Content">
-                                        <?php endif; ?>
+                                        <img 
+                                            loading="lazy"
+                                            data-src="<?= $images->wallpaper()->toFile()->thumb(['width'=> 600,'quality'=> 50,])->url() ?>" 
+                                            alt="Screen Content"
+                                        >
                                     </div>
                                 </div>     
+                            <?php endif; ?>
                         <?php endif ?>
                     <?php else: ?>
                         <p>Gallery page not found.</p>
