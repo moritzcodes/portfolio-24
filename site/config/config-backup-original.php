@@ -46,7 +46,7 @@ return [
       }
     ],
     [
-      'pattern' => 'learning-api',
+      'pattern' => 'api/learning-log',
       'method' => 'POST',
       'action' => function() {
           // Check authorization using the dedicated Learning API key
