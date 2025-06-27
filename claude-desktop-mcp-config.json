@@ -1,0 +1,21 @@
+{
+  "mcpServers": {
+    "learning-log-local": {
+      "command": "node",
+      "args": ["/Users/moritzkindler/Documents/5-portfolio-24/mcp-learning-log-server.js"],
+      "env": {
+        "MCP_MODE": "local",
+        "LOCAL_LEARNING_LOG_PATH": "/Users/moritzkindler/Documents/5-portfolio-24/content/learning-log/today.txt"
+      }
+    },
+    "learning-log-live": {
+      "command": "node", 
+      "args": ["/Users/moritzkindler/Documents/5-portfolio-24/mcp-learning-log-server.js"],
+      "env": {
+        "MCP_MODE": "remote",
+        "REMOTE_API_URL": "https://moritzkindler.com/api/learning-log",
+        "LEARNING_API_KEY": "learning-log-secret-key-2025"
+      }
+    }
+  }
+} 
